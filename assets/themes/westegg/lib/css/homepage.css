@@ -1,0 +1,48 @@
+/* Import Fonts
+------------------------------------------------------------ */
+/* Font Stacks */
+.customsansserif,
+.customsanserif {
+  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
+.fontawesome {
+  font-family: FontAwesome;
+}
+/* Colors */
+/* Neutrals */
+/* Gradients */
+/* Buttons */
+.button:hover,
+.button:visited,
+.button a,
+.button a:hover,
+.button a:visited {
+  background-color: #9ca728;
+  border-radius: 0;
+  padding: 6px 24px;
+  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+  text-decoration: none;
+  background-color: #767e1e;
+}
+/* Clears */
+.msd-clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
