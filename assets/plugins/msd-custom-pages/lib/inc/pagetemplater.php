@@ -63,6 +63,7 @@ class PageTemplater {
                 // Add your templates to this array.
                 $this->templates = array(
                         'page-sectioned.php'     => 'Sectioned Page',
+                        'page-simple-sectioned.php'     => 'Simple Sectioned Page',
                 );
                 
         } 
