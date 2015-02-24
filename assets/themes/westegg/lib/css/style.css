@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 /*
 HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
@@ -5563,7 +5564,7 @@ td.visible-print {
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5584,7 +5585,7 @@ td.visible-print {
   background-color: #9ca728;
   border-radius: 0;
   padding: 6px 24px;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5683,7 +5684,7 @@ blockquote {
   border: none;
 }
 blockquote p {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5717,7 +5718,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5802,7 +5803,7 @@ input[type="submit"],
   background-color: #9ca728;
   border-radius: 0;
   padding: 6px 24px;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5829,7 +5830,7 @@ input:hover[type="submit"],
   background-color: #9ca728;
   border-radius: 0;
   padding: 6px 24px;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6197,27 +6198,11 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 img#wpstats {
   display: none;
 }
-/* Pre Header */
-.pre-header {
-  background: url(../img/arronco-color-bar.png) #9ca728;
-  min-height: 3px;
-}
-.pre-header .wrap {
-  text-align: right;
-}
-.pre-header .wrap .header-widget-area {
-  text-align: right;
-  line-height: 0;
-}
-.pre-header .wrap .header-widget-area .widget {
-  width: auto;
-  display: inline-block;
-}
 /*
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background-color: #fff;
+  background-color: #1a1a1a;
 }
 .site-header .wrap {
   padding: 40px 0;
@@ -6227,7 +6212,7 @@ Site Header
 --------------------------------------------- */
 .title-area {
   float: left;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6279,7 +6264,7 @@ Site Header
   min-height: 85px;
   width: 380px;
   height: 100px;
-  background: url(../img/logo.png) no-repeat center left;
+  background: url(../img/logo.svg) no-repeat center left;
   background-size: contain;
   margin: 10px 0;
   margin: 1rem 0;
@@ -6379,7 +6364,7 @@ Site Navigation
 .genesis-nav-menu {
   clear: both;
   color: #5e5f61;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6485,10 +6470,9 @@ Site Navigation
   width: auto;
   position: relative;
   border-radius: 0 0 0.4rem 0.4rem;
-  background-color: #9ca728;
 }
 .tab-menu .genesis-nav-menu .menu-item a {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
@@ -6498,10 +6482,7 @@ Site Navigation
   color: #ffffff;
 }
 .tab-menu .genesis-nav-menu .menu-item a:hover {
-  color: #ffffff;
-}
-.tab-menu .genesis-nav-menu .menu-item.schedule {
-  background-color: #5e5f61;
+  color: #ff0000;
 }
 .tab-menu .genesis-nav-menu li.menu-item.last-child {
   border: 0;
@@ -6511,7 +6492,7 @@ Site Navigation
 .nav-primary {
   display: inline-block;
   float: right;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6521,7 +6502,7 @@ Site Navigation
   padding: 0;
 }
 .nav-primary li.menu-item a {
-  color: #9ca728;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 0.6rem 1.2rem;
 }
@@ -6554,7 +6535,7 @@ Site Navigation
   text-decoration: none;
 }
 .nav-primary li.separator {
-  color: #9ca728;
+  color: #ff0000;
 }
 .nav-primary li:hover a,
 .nav-primary li.current-menu-item a,
@@ -6562,8 +6543,7 @@ Site Navigation
 .nav-primary li:hover a:hover,
 .nav-primary li.current-menu-item a:hover,
 .nav-primary li.current-menu-ancestor a:hover {
-  background: #9ca728;
-  color: #ffffff;
+  color: #ff0000;
   text-decoration: none;
 }
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
@@ -6589,7 +6569,7 @@ Site Navigation
   text-transform: uppercase;
 }
 .nav-secondary .wrap li.menu-item > a:hover {
-  color: #9ca728;
+  color: #ff0000;
 }
 .nav-secondary .wrap li.menu-item ul {
   display: none;
@@ -6783,7 +6763,7 @@ article.entry {
   display: block;
 }
 .entry-header .entry-title {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 28px;
   font-size: 2.8rem;
@@ -6795,7 +6775,7 @@ article.entry {
   margin: 0;
 }
 .entry-header .entry-subtitle {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 22px;
   font-size: 2.2rem;
@@ -6805,7 +6785,7 @@ article.entry {
   line-height: 1.25;
 }
 .entry-header .client-name {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
@@ -7013,7 +6993,7 @@ Sidebars
   background-color: #9ca728;
   border-radius: 0;
   padding: 6px 24px;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -7208,9 +7188,9 @@ Footer Widgets
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #8f9738;
+  background-color: #1a1a1a;
   color: #ffffff;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 10px;
   font-size: 1rem;
@@ -7226,49 +7206,6 @@ Site Footer
 .site-footer a {
   color: #ffffff;
 }
-.page-title-area {
-  background: #1a1a1a;
-}
-.page-title-area .banner {
-  background-repeat: no-repeat;
-  max-width: 1660px;
-  margin: 0 auto;
-}
-.page-title-area .banner .texturize {
-  background-image: url(../img/bkg-dots.png);
-}
-.page-title-area .banner .texturize .gradient {
-  min-height: 250px;
-  background: -moz-linear-gradient(left, #1a1a1a 0%, rgba(26, 26, 26, 0.1) 10%, rgba(26, 26, 26, 0.1) 90%, #1a1a1a 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1a1a1a), color-stop(10%, rgba(26, 26, 26, 0.1)), color-stop(90%, rgba(26, 26, 26, 0.1)), color-stop(100%, #1a1a1a));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #1a1a1a 0%, rgba(26, 26, 26, 0.1) 10%, rgba(26, 26, 26, 0.1) 90%, #1a1a1a 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #1a1a1a 0%, rgba(26, 26, 26, 0.1) 10%, rgba(26, 26, 26, 0.1) 90%, #1a1a1a 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #1a1a1a 0%, rgba(26, 26, 26, 0.1) 10%, rgba(26, 26, 26, 0.1) 90%, #1a1a1a 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, #1a1a1a 0%, rgba(26, 26, 26, 0.1) 10%, rgba(26, 26, 26, 0.1) 90%, #1a1a1a 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1a1a', endColorstr='#1a1a1a', GradientType=1);
-  /* IE6-9 */
-}
-.page-title-area .section-title,
-.page-title-area .page-title,
-.page-title-area .entry-title {
-  padding: 1.2em 0;
-  margin: 0;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
-  font-size: 56px;
-  font-size: 5.6rem;
-  line-height: 1.625;
-  color: #ffffff;
-  font-weight: 300;
-  text-shadow: 0 0 0.5em #1a1a1a;
-  text-align: right;
-}
 .page-title-area .section-title a,
 .page-title-area .page-title a,
 .page-title-area .entry-title a,
@@ -7283,45 +7220,6 @@ Site Footer
 .page-title-area .entry-title a:hover {
   text-decoration: none;
   opacity: 1;
-}
-.page-title-area .section-title:before,
-.page-title-area .page-title:before,
-.page-title-area .entry-title:before {
-  content: '__';
-  top: -0.1em;
-  position: relative;
-}
-.header-widget-area .textwidget {
-  font-size: 15px;
-  font-size: 1.5rem;
-  color: #5e5f61;
-}
-.footer-widgets .savings {
-  background-color: #5e5f61;
-}
-.footer-widgets .savings .widget-wrap {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 1rem 0;
-}
-.footer-widgets .savings .widget-wrap .readmore span {
-  background-color: #5e5f61;
-  border-radius: 0;
-  padding: 6px 24px;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.625;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: normal;
-  text-transform: uppercase;
-  display: table;
-  margin: 12px auto;
-  text-decoration: none;
-  border: 2px solid #ffffff;
-  margin-left: 0;
 }
 .footer-widgets .msd-connected .widget-wrap .wrap div.first-child {
   padding-left: 0;

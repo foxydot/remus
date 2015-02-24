@@ -1,9 +1,10 @@
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 /* Import Fonts
 ------------------------------------------------------------ */
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -24,7 +25,7 @@
   background-color: #9ca728;
   border-radius: 0;
   padding: 6px 24px;
-  font-family: "Sceptica", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;

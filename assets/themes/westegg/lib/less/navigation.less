@@ -128,7 +128,6 @@ Site Navigation
       width:auto;
       position: relative;
       border-radius: 0 0 0.4rem 0.4rem;
-      background-color: @green;
       a{
         .customheader(1.4);
         line-height: 1;
@@ -136,11 +135,8 @@ Site Navigation
         color: @white;
       }
       a:hover{
-        color:@white;
+        color:@red;
       }
-    }
-    .menu-item.schedule{
-      background-color: @medgrey;
     }
     li.menu-item.last-child{
       border: 0;
@@ -160,7 +156,7 @@ Site Navigation
   li.menu-item{
     padding: 0;
     a{
-      color: @green;
+      color: @white;
       text-transform: uppercase;
       padding: 0.6rem 1.2rem;
     }
@@ -190,12 +186,11 @@ Site Navigation
     }
   }
   li.separator {
-    color: @green;
+    color: @red;
   }
   li:hover, li.current-menu-item, li.current-menu-ancestor{
     a, a:hover{
-      background: @green;
-      color: @white;
+      color: @red;
       text-decoration: none;
       }
   }
@@ -222,7 +217,7 @@ Site Navigation
         text-transform: uppercase;
       }
       >a:hover{
-        color:@green;
+        color:@red;
       }
       ul{
         display: none;
