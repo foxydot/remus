@@ -3,28 +3,29 @@ Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 .site-header{
   nav{
-    display: inline-block;
-    float: right;
-    clear: right;
+  display:block;
+  float:none;
+  clear:both;
+  padding-top:41px;
   }
 }
 
 .genesis-nav-menu {
-  clear: both;
-  color: @medgrey;
-  .customheader();
-  line-height: 1.5;
-  width: 100%;
+ clear: both;
+ float: none;
+ padding: 0;
+ text-align: center;
+ width: 100%;
   .menu-item,.separator {
-    display: inline-block;
-    text-align: left;
+   display:inline-block;
+   margin:0 -3px;
+   padding:0;
+   text-align:left;
     a {
-      border: none;
-      color: @medgrey;
-      display: block;
-      padding: 20px;
-      padding: 2rem;
-      position: relative;
+     display: block;
+     padding: 16px 22px;
+     padding: 1.6rem 2.2rem;
+     position: relative;
     }
     a:hover{
      color: @dkgrey;
@@ -40,31 +41,22 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu {
-  left: -9999px;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: opacity .4s ease-in-out;
-  -moz-transition:    opacity .4s ease-in-out;
-  -ms-transition:     opacity .4s ease-in-out;
-  -o-transition:      opacity .4s ease-in-out;
-  transition:         opacity .4s ease-in-out;
-  width: 200px;
-  z-index: 99;
-  a {
-    background: @white;
-    border: 1px solid #eee;
-    border-top: none;
-    font-size: 16px;
-    font-size: 1.6rem;
-    padding: 16px 20px;
-    padding: 1.6rem 2rem;
+ left: -9999px;
+ margin: 0;
+ opacity: 0;
+ padding: 0;
+ position: absolute;
+ width: 200px;
+ word-wrap: break-word;
+ z-index: 99;
+  a { 
     position: relative;
-    width: 196px;
+    width: 200px;
   }
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
-  margin: -54px 0 0 190px;
+   margin: -43px 0 0 199px;
 }
 
 .genesis-nav-menu .menu-item:hover {
@@ -150,15 +142,19 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-  display: inline-block;
-  float: right;
-  .customheader(1.6);
+  display: block;
+  float: none;
+  .customheader(2.2);
+  font-weight: 700;
   li.menu-item{
     padding: 0;
     a{
-      color: @white;
-      text-transform: uppercase;
-      padding: 0.6rem 1.2rem;
+      color:@white;
+      padding:0px 15px;
+      font-weight:700;
+      line-height:51px;
+      border-bottom:1px solid #8d7b73;
+      border-top:1px solid #8d7b73;
     }
     .sub-menu{
       background-color: @white;
@@ -186,11 +182,11 @@ Site Navigation
     }
   }
   li.separator {
-    color: @red;
+    color: #dbc79c;
   }
   li:hover, li.current-menu-item, li.current-menu-ancestor{
     a, a:hover{
-      color: @red;
+      color: #dbc79c;
       text-decoration: none;
       }
   }

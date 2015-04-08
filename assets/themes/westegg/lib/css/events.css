@@ -22,22 +22,24 @@
 .button a,
 .button a:hover,
 .button a:visited {
-  background-color: #9ca728;
+  background-color: rgba(156, 167, 40, 0);
   border-radius: 0;
-  padding: 6px 24px;
-  font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  padding: 6px 40px;
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.625;
   color: #FFFFFF;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase;
-  display: table;
+  display: inline-block;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #767e1e;
+  width: auto;
+  border: solid 5px #ffffff;
+  background-color: rgba(156, 167, 40, 0.8);
 }
 /* Clears */
 .msd-clearfix {

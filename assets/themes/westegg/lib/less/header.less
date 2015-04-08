@@ -3,7 +3,10 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-  background-color: @dkgrey;
+  background:none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .site-header .wrap {
@@ -28,12 +31,14 @@ Site Header
 }
 
 .site-title {
-  font-size: 28px;
-  font-size: 2.8rem;
-  line-height: 1;
-  margin: 0 0 8px;
-  margin: 0 0 0.8rem;
-  text-transform: uppercase;
+  font-size:28px;
+  font-size:2.8rem;
+  line-height:1;
+  margin: 0 0 10px 0px;
+  margin: 0 0 0.10rem 0rem;
+  text-transform:uppercase;
+  position:relative;
+  top:-24px;
 }
 
 .site-title a,
@@ -59,7 +64,7 @@ Site Header
 
 .header-image .site-description,
 .header-image .site-title a {
-  display: block;
+  display: inline-block;
   text-indent: -9999px;
 }
 
@@ -70,14 +75,14 @@ Site Header
 }
 
 .header-image .site-title a {
-  float: left;
-  min-height: 85px;
-  width: 380px;
-  height: 100px;
-  background: url(../img/logo.svg) no-repeat center left;
-  background-size: contain;
-  margin: 10px 0;
-  margin: 1rem 0;
+  display:inline-block;
+  min-height:83px;
+  width:242px;
+  height:98px;
+  background:url(../img/logo.png) no-repeat center center;
+  background-size:contain;
+  margin:10px 0;
+  margin:1rem 0;
 }
 
 /* Widget Area

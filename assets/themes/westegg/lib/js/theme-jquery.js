@@ -21,3 +21,10 @@ jQuery(document).ready(function($) {
 	});
 	
 });
+
+
+Cufon.replace('.franchise-bold', { fontFamily:'Franchise Bold', hover:true });
+Cufon('.recipebtn', {
+hover: { color: '#f99b01'},
+color: '#ffffff',
+});

@@ -40,7 +40,7 @@ function msdlab_add_scripts() {
             wp_enqueue_script('bootstrap-jquery','//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',array('jquery'));
         //use local
             //wp_enqueue_script('bootstrap-jquery',get_stylesheet_directory_uri().'/lib/bootstrap/js/bootstrap.min.js',array('jquery'));
-        wp_enqueue_script('msd-jquery',get_stylesheet_directory_uri().'/lib/js/theme-jquery.js',array('jquery','bootstrap-jquery'));
+        wp_enqueue_script('msd-jquery',get_stylesheet_directory_uri().'/lib/js/theme-jquery.js',array('jquery','bootstrap-jquery','cufon'));
         wp_enqueue_script('nav-scripts',get_stylesheet_directory_uri().'/lib/js/nav-scripts.js',array('jquery','bootstrap-jquery'));
         wp_enqueue_script('equalHeights',get_stylesheet_directory_uri().'/lib/js/jquery.equal-height-columns.js',array('jquery'));
         wp_deregister_script('greensock');
@@ -53,6 +53,10 @@ function msdlab_add_scripts() {
         
         wp_enqueue_script('scroll-magic',get_stylesheet_directory_uri().'/lib/js/jquery.scrollmagic.min.js',array('jquery','tweenmax'));
         wp_enqueue_script('scroll-magic-debug',get_stylesheet_directory_uri().'/lib/js/jquery.scrollmagic.debug.js',array('jquery','tweenmax','scroll-magic'));
+        
+        //Cufon stuff
+        wp_enqueue_script('cufon','http://cufon.shoqolate.com/js/cufon-yui.js',array('jquery'));
+        wp_enqueue_script('cufon-franchise',get_stylesheet_directory_uri().'/lib/js/franchise.cufonfonts.js',array('cufon'));
         if($is_IE){
             wp_enqueue_script('columnizr',get_stylesheet_directory_uri().'/lib/js/jquery.columnizer.js',array('jquery'));
             wp_enqueue_script('background-size',get_stylesheet_directory_uri().'/lib/js/jquery.backgroundSize.js',array('jquery'));

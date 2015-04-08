@@ -96,23 +96,25 @@
 
 /* Buttons */
 .button(@color:@green) {
-  background-color: @color;
+  background-color: fade(@color,0%);
   border-radius: 0;
-  padding: 6px 24px;
-  .customsanserif;
+  padding: 6px 40px;
+  .customheader(1.8);
   color: #FFFFFF;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase;
-  display: table;
+  display: inline-block;
   margin: 12px auto;
   text-decoration: none;
+  width: auto;
+  border: solid 5px @white;
 }
 
 
 .button-hover(@color:@green) {
   .button(@color);
-  background-color: darken(@color,10%);
+  background-color: fade(@color,80%);
 }
 
 .button:hover,
