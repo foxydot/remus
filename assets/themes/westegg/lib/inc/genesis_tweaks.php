@@ -9,8 +9,6 @@ add_theme_support( 'genesis-responsive-viewport' );//* Add viewport meta tag for
 add_theme_support( 'custom-background' );//* Add support for custom background
 //* Add support for structural wraps
 add_theme_support( 'genesis-structural-wraps', array(
-'header',
-'nav',
 'subnav',
 'footer',
 'site-inner'
@@ -31,7 +29,7 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 remove_action('genesis_header','genesis_do_header' );
 add_action('genesis_header','msdlab_do_header' );
 
-add_action( 'genesis_header', 'msdlab_do_tabnav', 5);
+//add_action( 'genesis_header', 'msdlab_do_tabnav', 5);
 add_action('genesis_header','msdlab_header_right' );
 add_action( 'genesis_header', 'genesis_do_subnav' );
 

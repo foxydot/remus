@@ -5626,6 +5626,7 @@ html {
   /* 10px browser default */
 }
 body {
+  background: #ff0000;
   color: #1a1a1a;
   font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
@@ -7223,9 +7224,11 @@ Site Footer
   color: #ffffff;
   text-decoration: none;
 }
-.remus-logo {
-  border-bottom: none !important;
-  border-top: none !important;
+.nav-primary li.menu-item.remus-logo {
+  border: none;
+}
+.nav-primary li.menu-item.remus-logo .site-title a {
+  border: none;
 }
 .mobile-logo {
   display: none;

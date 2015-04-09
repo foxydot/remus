@@ -236,15 +236,25 @@ function msdlab_do_title_area(){
 
 function msdlab_do_section_title(){
     if(is_page()){
-        global $post;
+        global $post,$subtitle_metabox;
         if(get_section_title()!=$post->post_title){
             add_action('genesis_before_entry','genesis_do_post_title');
         }
+        $subtitle = (count($subtitle_metabox->get_the_value('subtitle'))>0)?$subtitle_metabox->get_the_value('subtitle'):false;
+
         print '<div class="banner clearfix" style="background-image:url('.msdlab_get_thumbnail_url($post->ID,'full').')">';
         print '<div class="texturize">';
         print '<div class="gradient">';
         print '<div class="wrap">';
         print '<h2 class="section-title">';
+        print '<span class="banner-captions-top">
+                    <span class="line2"> &nbsp; </span>
+                    <span class="text"> King of the bootleggers </span>
+                    <span class="line2">  &nbsp; </span>
+                </span>';
+        if($subtitle){
+            print '<span class="subtitle">'.$subtitle.'</span>';
+        }
         print get_section_title();
         print '</h2>';
         print '</div>';

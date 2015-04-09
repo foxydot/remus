@@ -20,6 +20,9 @@ jQuery(document).ready(function($) {
 		}
 	});
 	
+	$('.nav-primary .remus-logo').html('').append($('.site-header .title-area .site-title'));
+	$('.nav-primary li.menu-item.dot a').append('<span class="separator-dot">&nbsp;</span>');
+	
 });
 
 
