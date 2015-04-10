@@ -224,7 +224,7 @@
   cursor: pointer;
 }
 .post-type-archive-project #portfolio-projects article.more-projects .image-widget-background {
-  background: #999999;
+  background: #c2c2c2;
 }
 .post-type-archive-project #portfolio-projects article.more-projects .image-widget-background .fuzzybubble {
   opacity: 1;

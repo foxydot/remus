@@ -23,8 +23,26 @@ jQuery(document).ready(function($) {
 	$('.nav-primary .remus-logo').html('').append($('.site-header .title-area .site-title'));
 	$('.nav-primary li.menu-item.dot a').append('<span class="separator-dot">&nbsp;</span>');
 	
+	$(".go-up").click(function(){
+        $("html,body").animate({scrollTop:0},500);
+        return false;
+    });
+    if(jQuery(this).scrollTop() > 600 ) {
+            jQuery(".go-up").css("right","40px");
+        }else {
+            jQuery(".go-up").css("right","-60px");
+        }
 });
 
+
+jQuery(window).scroll(function () {
+        if(jQuery(this).scrollTop() > 600 ) {
+            jQuery(".go-up").css("right","40px");
+        }else {
+            jQuery(".go-up").css("right","-60px");
+        }
+    });
+    
 
 Cufon.replace('.franchise-bold', { fontFamily:'Franchise Bold', hover:true });
 Cufon('.recipebtn', {
