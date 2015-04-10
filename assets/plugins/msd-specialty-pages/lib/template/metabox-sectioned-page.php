@@ -6,7 +6,7 @@ $postid = is_admin()?$_GET['post']:$post->ID;
 $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
   // check for a template type
 if (is_admin()){
-    if($template_file == 'page-sectioned.php') { ?>
+    if($template_file == 'page-sectioned.php' ) { ?>
 <div class="msdlab_meta_control">
     <p id="warning" style="display: none;background:lightYellow;border:1px solid #E6DB55;padding:5px;">Order has changed. Please click Save or Update to preserve order.</p>
     <div class="table">
@@ -18,6 +18,14 @@ if (is_admin()){
             <h3>
                 Section <?php print $i ?>
             </h3>
+        </div>
+        <div class="cell">
+            <?php $mb->the_field('section-name'); ?>
+            <label>Section Name*</label>            
+            <div class="input_container">
+                <input type="text" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>"/><br />
+                <i>Please use a section name. This is used to produce identifying wrappers for the content!</i>
+            </div>
         </div>
         <div class="cell">
             <?php $mb->the_field('layout'); ?>
@@ -37,7 +45,7 @@ if (is_admin()){
                     $thumb_array = wp_get_attachment_image_src( get_attachment_id_from_src($mb->get_the_value()), 'thumbnail' );
                     $thumb = $thumb_array[0];
                 } else {
-                    $thumb = WP_PLUGIN_URL.'/msd-custom-pages/lib/img/spacer.gif';
+                    $thumb = WP_PLUGIN_URL.'/msd-specialty-pages/lib/img/spacer.gif';
                 } ?>
                 <img class="background-preview-img" src="<?php print $thumb; ?>">
                 <?php $group_name = 'background-img-'. $mb->get_the_index(); ?>
@@ -54,6 +62,13 @@ if (is_admin()){
             <div class="input_container">
                 <?php $mb->the_field('background-color'); ?>
                 <input class="colorpicker" type="text" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>"/>
+            </div>
+        </div>       
+        <div class="cell">
+            <?php $mb->the_field('css-classes'); ?>
+            <label>CSS Classes</label>            
+            <div class="input_container">
+                <input type="text" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>"/><br />
             </div>
         </div>
         <div class="content-area box">
@@ -96,7 +111,7 @@ if (is_admin()){
                     $thumb_array = wp_get_attachment_image_src( get_attachment_id_from_src($mb->get_the_value()), 'thumbnail' );
                     $thumb = $thumb_array[0];
                 } else {
-                    $thumb = WP_PLUGIN_URL.'/msd-custom-pages/lib/img/spacer.gif';
+                    $thumb = WP_PLUGIN_URL.'/msd-specialty-pages/lib/img/spacer.gif';
                 } ?>
                 <img class="content-area-preview-img" src="<?php print $thumb; ?>">
                 <?php $group_name = 'content-area-feature-img-'. $mb->get_the_index(); ?>
@@ -182,6 +197,6 @@ if (is_admin()){
     <p style="margin-bottom:15px; padding-top:5px;"><a href="#" class="docopy-sections button">Add Section</a>
 </div>
 <?php } else {
-    print "Select \"Sectioned Page\" template and save to activate.";
+    print "Select \"Sectioned Page\" or \"Simple Sectioned Page\" template and save to activate.";
 }
 } ?>

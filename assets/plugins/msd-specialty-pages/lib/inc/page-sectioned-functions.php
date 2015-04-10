@@ -34,7 +34,7 @@ class MSDSectionedPage{
             'types' => array('page'),
             'context' => 'normal', // same as above, defaults to "normal"
             'priority' => 'high', // same as above, defaults to "high"
-            'template' => WP_PLUGIN_DIR.'/'.plugin_dir_path('msd-custom-pages/msd-custom-pages.php'). '/lib/template/metabox-sectioned-page.php',
+            'template' => WP_PLUGIN_DIR.'/'.plugin_dir_path('msd-specialty-pages/msd-specialty-pages.php'). '/lib/template/metabox-sectioned-page.php',
             'autosave' => TRUE,
             'mode' => WPALCHEMY_MODE_EXTRACT, // defaults to WPALCHEMY_MODE_ARRAY
             'prefix' => '_msdlab_', // defaults to NULL
@@ -43,7 +43,12 @@ class MSDSectionedPage{
     }
     
     function default_output($section,$i){
+        //ts_data($section);
+        global $parallax_ids;
         $eo = ($i+1)%2==0?'even':'odd';
+        $title = apply_filters('the_title',$section['content-area-title']);
+        $section_name = $section['section-name']!=''?$section['section-name']:$title;
+        $slug = sanitize_title_with_dashes(str_replace('/', '-', $section_name));
         $background = '';
         if($section['background-color'] || $section['background-image']){
             if($section['background-color'] && $section['background-image']){
@@ -53,20 +58,31 @@ class MSDSectionedPage{
             } else{
                $background = 'style="background-color: '.$section['background-color'].';"';
             }
+            if($section['background-image'] && $section['background-image-parallax']){
+                $parallax_ids[] = $slug;
+            }
         }
-        $title = apply_filters('the_title',$section['content-area-title']);
         $wrapped_title = trim($title) != ''?'<div class="section-title">
             <h3 class="wrap">
                 '.$title.'
             </h3>
         </div>':'';
-        $slug = sanitize_title_with_dashes(str_replace('/', '-', $title));
-        $subtitle = $section['content-area-subtitle'] !=''?'<h4 class="section-subtitle">'.apply_filters('the_content',$section['content-area-subtitle']).'</h4>':'';
+        $subtitle = $section['content-area-subtitle'] !=''?'<h4 class="section-subtitle">'.$section['content-area-subtitle'].'</h4>':'';
         $content = apply_filters('the_content',$section['content-area-content']);
-        $featured_image = $section['content-area-image'] !=''?'<img src="'.$section['content-area-image'].'">':'';
+        $float = $section['feature-image-float']!='none'?' style="float:'.$section['feature-image-float'].';"':'';
+        $featured_image = $section['content-area-image'] !=''?'<img src="'.$section['content-area-image'].'"'.$float.' />':'';
+        $classes = array(
+            'section',
+            'section-'.$slug,
+            $section['css-classes'],
+            'section-'.$eo,
+            'clearfix',
+        );
+        //think about filtering the classes here
         $ret = '
-        <div id="'.$slug.'" class="section section-'.$eo.' section-'.$slug.' clearfix"'.$background.'>
-            '.$wrapped_title.'
+        <div id="'.$slug.'" class="'.implode(' ', $classes).'"'.$background.'>
+        
+                '.$wrapped_title.'
             <div class="section-body">
                 <div class="wrap">
                     '.$featured_image.'
@@ -80,8 +96,7 @@ class MSDSectionedPage{
     }
     
     function sectioned_page_output(){
-        wp_enqueue_script('sticky',WP_PLUGIN_URL.'/'.plugin_dir_path('msd-custom-pages/msd-custom-pages.php'). '/lib/js/jquery.sticky.js',array('jquery'),FALSE,TRUE);
-        wp_enqueue_script('jquery-path',WP_PLUGIN_URL.'/'.plugin_dir_path('msd-custom-pages/msd-custom-pages.php'). '/lib/js/jquery.path.js',array('jquery','bootstrap-jquery'));
+        wp_enqueue_script('sticky',WP_PLUGIN_URL.'/'.plugin_dir_path('msd-specialty-pages/msd-specialty-pages.php'). '/lib/js/jquery.sticky.js',array('jquery'),FALSE,TRUE);
         
         global $post,$subtitle_metabox,$sectioned_page_metabox,$nav_ids;
         $i = 0;
@@ -98,45 +113,43 @@ class MSDSectionedPage{
             }
             $i++;
         }//close while
+        print '<div class="sectioned-page-wrapper">';
         print implode("\n",$sections);
+        print '</div>';
         }//clsoe if
     }
 
-    function sectioned_page_floating_nav(){
-        global $nav_ids; //http://julian.com/research/velocity/ llook at this to speed up animations
+    function sectioned_page_footer_js(){
+        global $nav_ids,$parallax_ids; //http://julian.com/research/velocity/ llook at this to speed up animations
         ?>
         <script type="text/javascript">
         jQuery(document).ready(function($) {
-            $("#floating_nav").sticky({ topSpacing: 0 });
-            /*$("#billboard_nav .fuzzybubble").blurjs({
-                radius: 10,
-                source: $('.image-widget-background'), 
-                });*/
-            var arc_params = function(i) {
-              var arc_positions = [240,270,300,60,90,120];
-              return new $.path.arc({
-                center: [230,100],  
-                    radius: 320,    
-                    start: 180,
-                    end: arc_positions[i],
-                    dir: -1
-              });
-            }
-            <?php
+        //do some little stuff for parralaxing
+        // init controller
+        var section_controller = new ScrollMagic({globalSceneOptions: {triggerHook: "onEnter", duration: $(window).height()*4}});
+    
+        // build scenes
+        <?php
             $i = 0;
-            foreach($nav_ids AS $nav_id){
-                print '$("#billboard_nav #'.$nav_id.'_bb_nav").delay('.($i*500).').animate({opacity: 1,path : arc_params('.$i.')},4000);
-                ';
-                $i++;
-            }
-            ?>
+            foreach($parallax_ids AS $p_id):
+        ?>
+        new ScrollScene({options:{triggerElement:"#<?php print $p_id; ?>"}})
+            .setTween(TweenMax.fromTo("#<?php print $p_id; ?>", 1, {css:{'background-position':"50% 100%"}, ease: Linear.easeNone}, {css:{'background-position':"50% 0%"}, ease: Linear.easeNone}))
+            .addTo(section_controller);
+        <?php 
+            $i++;
+            endforeach;
+        ?>
+            $("#floating_nav").sticky({ topSpacing: 0 });
         });
         </script>
         <?php
     }
         function info_footer_hook()
         {
-            global $current_screen;
+            $postid = is_admin()?$_GET['post']:$post->ID;
+            $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
+            if($template_file == 'page-sectioned.php'){
             ?><script type="text/javascript">
                 jQuery(function($){
                     $("#wpa_loop-sections").sortable({
@@ -146,18 +159,19 @@ class MSDSectionedPage{
                     });
                     $("#postdivrich").after($("#_page_sectioned_metabox"));
                     $(".colorpicker").spectrum({
+                        preferredFormat: "rgb",
                         showAlpha: true,
                         showInput: true,
                         allowEmpty: true,
                     });
                 });
                 </script><?php
-            
+            }
         }
         
         function enqueue_admin(){
-            wp_enqueue_script('spectrum',WP_PLUGIN_URL.'/msd-custom-pages/lib/js/spectrum.js',array('jquery'));
-            wp_enqueue_style('sectioned-admin',WP_PLUGIN_URL.'/msd-custom-pages/lib/css/sectioned.css');
-            wp_enqueue_style('spectrum',WP_PLUGIN_URL.'/msd-custom-pages/lib/css/spectrum.css');
+            wp_enqueue_script('spectrum',WP_PLUGIN_URL.'/msd-specialty-pages/lib/js/spectrum.js',array('jquery'));
+            wp_enqueue_style('sectioned-admin',WP_PLUGIN_URL.'/msd-specialty-pages/lib/css/sectioned.css');
+            wp_enqueue_style('spectrum',WP_PLUGIN_URL.'/msd-specialty-pages/lib/css/spectrum.css');
         }
 }

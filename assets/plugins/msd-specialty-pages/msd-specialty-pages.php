@@ -1,11 +1,19 @@
 <?php
 /*
-Plugin Name: MSD Custom Pages
-Description: Custom plugin for MSDLAB. Framework to create custom templated pages with custom backends
-Author: Catherine Sandrick
-Version: 0.0.4
+Plugin Name: MSD Specialty Pages
+Description: Framework to create specialty templated pages with custom backends. Currently supports two types of LayerCake design structures.
+Author: MSDLAB
+Version: 0.1.1
 Author URI: http://msdlab.com
 */
+
+if(!class_exists('GitHubPluginUpdater')){
+    require_once (plugin_dir_path(__FILE__).'/lib/resource/GitHubPluginUpdater.php');
+}
+
+if ( is_admin() ) {
+    new GitHubPluginUpdater( __FILE__, 'msdlab', "msd-specialty-pages" );
+}
 
 if(!class_exists('WPAlchemy_MetaBox')){
     if(!include_once (WP_CONTENT_DIR.'/wpalchemy/MetaBox.php'))
@@ -84,10 +92,6 @@ if (!class_exists('MSDCustomPages')) {
          */
         var $options = array();
         //Methods
-        /**
-        * PHP 4 Compatible Constructor
-        */
-        function MSDCustomPages(){$this->__construct();}
         
         /**
         * PHP 5 Constructor
@@ -105,6 +109,10 @@ if (!class_exists('MSDCustomPages')) {
             //here are some examples to get started with
             if(class_exists('PageTemplater')){
                 add_action( 'plugins_loaded', array( 'PageTemplater', 'get_instance' ) );
+            }
+            if(class_exists('MSDSimpleSectionedPage')){
+                add_action('admin_print_footer_scripts',array('MSDSimpleSectionedPage','info_footer_hook') ,100);     
+                add_action('admin_enqueue_scripts',array('MSDSimpleSectionedPage','enqueue_admin')); 
             }
             if(class_exists('MSDSectionedPage')){
                 add_action('admin_print_footer_scripts',array('MSDSectionedPage','info_footer_hook') ,100);     
