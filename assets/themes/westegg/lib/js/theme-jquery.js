@@ -37,7 +37,17 @@ jQuery(document).ready(function($) {
     $('.page-title-area .wrap').append($('.section-move-into-header .section-body .wrap'));
     $('.section-move-into-header').detach();
     $('.section-handcrafted-recipes,.section-contact-george-remus').wrapInner('<div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"></div>');
-    
+    $('.page.recipes .sectioned-page-wrapper .section').wrapInner('<div class="wrap"><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contentBlock"></div></div></div>');
+    $('.page.recipes .sectioned-page-wrapper .section .section-body img').each(function(){
+        var side = $(this).css('float');
+        $(this).wrap('<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 imgBlock"></div>');
+        if(side == 'left'){
+            $(this).parents('.contentBlock').before($(this).parents('.imgBlock'));
+        } else {
+            $(this).parents('.contentBlock').after($(this).parents('.imgBlock'));
+        }
+    });
+    //oh cufon, why are you so awful?
     Cufon.replace('.franchise-bold', { fontFamily:'Franchise Bold', hover:true });
     Cufon('.recipebtn', {
     hover: { color: '#f99b01'},
