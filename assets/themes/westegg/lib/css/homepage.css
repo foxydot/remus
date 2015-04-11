@@ -22,7 +22,7 @@
 .button a,
 .button a:hover,
 .button a:visited {
-  background-color: rgba(156, 167, 40, 0);
+  background-color: rgba(170, 28, 23, 0);
   border-radius: 0;
   padding: 6px 40px;
   font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
@@ -39,7 +39,7 @@
   text-decoration: none;
   width: auto;
   border: solid 5px #ffffff;
-  background-color: rgba(156, 167, 40, 0.8);
+  background-color: rgba(170, 28, 23, 0.8);
 }
 /* Clears */
 .msd-clearfix {
@@ -48,4 +48,29 @@
   height: 0;
   clear: both;
   visibility: hidden;
+}
+.section-meet-our-whiskeys {
+  padding: 100px 0px 230px 0px;
+  background-image: url(../img/extremely-small-batch-whiskey.jpg);
+  background-size: cover;
+  height: auto;
+  background-position: center top;
+}
+.section-meet-our-whiskeys .section-title {
+  margin-bottom: 30px;
+}
+.section-meet-our-whiskeys .section-title h3 {
+  font-size: 72px;
+  font-size: 7.2rem;
+  line-height: 65px;
+  line-height: 6.5rem;
+  color: #4f4237;
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.section-meet-our-whiskeys .section-body {
+  padding: 40px 0px;
 }

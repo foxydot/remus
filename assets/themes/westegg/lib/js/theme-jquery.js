@@ -32,6 +32,17 @@ jQuery(document).ready(function($) {
         }else {
             jQuery(".go-up").css("right","-60px");
         }
+        
+    //hacky moves to get the html to work in WP
+    $('.page-title-area .wrap').append($('.section-move-into-header .section-body .wrap'));
+    $('.section-move-into-header').detach();
+    $('.section-handcrafted-recipes,.section-contact-george-remus').wrapInner('<div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"></div>');
+    
+    Cufon.replace('.franchise-bold', { fontFamily:'Franchise Bold', hover:true });
+    Cufon('.recipebtn', {
+    hover: { color: '#f99b01'},
+    color: '#ffffff',
+    });
 });
 
 
@@ -43,9 +54,3 @@ jQuery(window).scroll(function () {
         }
     });
     
-
-Cufon.replace('.franchise-bold', { fontFamily:'Franchise Bold', hover:true });
-Cufon('.recipebtn', {
-hover: { color: '#f99b01'},
-color: '#ffffff',
-});

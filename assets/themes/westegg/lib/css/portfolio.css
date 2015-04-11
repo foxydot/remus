@@ -22,7 +22,7 @@
 .button a,
 .button a:hover,
 .button a:visited {
-  background-color: rgba(156, 167, 40, 0);
+  background-color: rgba(170, 28, 23, 0);
   border-radius: 0;
   padding: 6px 40px;
   font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
@@ -39,7 +39,7 @@
   text-decoration: none;
   width: auto;
   border: solid 5px #ffffff;
-  background-color: rgba(156, 167, 40, 0.8);
+  background-color: rgba(170, 28, 23, 0.8);
 }
 /* Clears */
 .msd-clearfix {
@@ -53,7 +53,7 @@
   display: none;
 }
 .post-type-archive-project .archive-description {
-  background: #9ca728;
+  background: #778e1d;
   text-align: center;
   color: #ffffff;
 }
@@ -83,7 +83,7 @@
   padding: 1rem;
 }
 .post-type-archive-project #filters a.filter {
-  border: 1px solid #9ca728;
+  border: 1px solid #778e1d;
   border-radius: 100%;
   font-size: 1rem;
   text-align: center;
@@ -124,7 +124,7 @@
 .post-type-archive-project #filters a.filter.active {
   text-decoration: none;
   color: #ffffff;
-  background-color: #9ca728;
+  background-color: #778e1d;
 }
 .post-type-archive-project #filters a.filter:hover:after,
 .post-type-archive-project #filters a.filter:hover:before,
@@ -198,7 +198,7 @@
   text-shadow: 2px 2px 4px #1a1a1a;
 }
 .post-type-archive-project #portfolio-projects article .image-widget-background .fuzzybubble .entry-permalink a {
-  background-color: rgba(156, 167, 40, 0);
+  background-color: rgba(170, 28, 23, 0);
   border-radius: 0;
   padding: 6px 40px;
   font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;

@@ -5589,7 +5589,7 @@ td.visible-print {
 .button a,
 .button a:hover,
 .button a:visited {
-  background-color: rgba(156, 167, 40, 0);
+  background-color: rgba(170, 28, 23, 0);
   border-radius: 0;
   padding: 6px 40px;
   font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
@@ -5606,7 +5606,7 @@ td.visible-print {
   text-decoration: none;
   width: auto;
   border: solid 5px #ffffff;
-  background-color: rgba(156, 167, 40, 0.8);
+  background-color: rgba(170, 28, 23, 0.8);
 }
 /* Clears */
 .msd-clearfix {
@@ -5626,7 +5626,7 @@ html {
   /* 10px browser default */
 }
 body {
-  background: #ff0000;
+  background: #aa1c17;
   color: #1a1a1a;
   font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
@@ -5802,11 +5802,11 @@ textarea:focus {
   outline: none;
 }
 ::-moz-placeholder {
-  color: #999;
+  color: #ffffff;
   opacity: 1;
 }
 ::-webkit-input-placeholder {
-  color: #999;
+  color: #ffffff;
 }
 button,
 input[type="button"],
@@ -5907,8 +5907,7 @@ article {
 }
 .site-inner {
   clear: both;
-  padding-top: 15px;
-  padding-top: 1.5rem;
+  padding: 0;
 }
 /* Column Widths and Positions
 --------------------------------------------- */
@@ -6118,7 +6117,7 @@ Widgets
   padding: 0.4rem 0;
   font-weight: normal;
   margin-bottom: 0;
-  color: #9ca728;
+  color: #778e1d;
 }
 /* Featured Content
 --------------------------------------------- */
@@ -6205,6 +6204,34 @@ div.gform_wrapper form li {
 div.gform_wrapper .gform_footer input[type="submit"] {
   font-size: 14px;
   font-size: 1.4rem;
+}
+.gform_wrapper {
+  font-family: "Roboto Slab", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.625;
+}
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="password"],
+.gform_wrapper input[type="date"],
+.gform_wrapper input[type="datetime"],
+.gform_wrapper input[type="datetime-local"],
+.gform_wrapper input[type="month"],
+.gform_wrapper input[type="number"],
+.gform_wrapper input[type="tel"],
+.gform_wrapper input[type="time"],
+.gform_wrapper input[type="url"],
+.gform_wrapper input[type="week"],
+.gform_wrapper select,
+.gform_wrapper textarea {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(94, 95, 97, 0.2);
+  color: #ffffff;
+  padding: 16px;
+  padding: 1.6rem;
+  width: 100%;
 }
 /* Jetpack
 --------------------------------------------- */
@@ -6488,7 +6515,7 @@ Site Navigation
   color: #ffffff;
 }
 .tab-menu .genesis-nav-menu .menu-item a:hover {
-  color: #ff0000;
+  color: #aa1c17;
 }
 .tab-menu .genesis-nav-menu li.menu-item.last-child {
   border: 0;
@@ -6579,7 +6606,7 @@ Site Navigation
   text-transform: uppercase;
 }
 .nav-secondary .wrap li.menu-item > a:hover {
-  color: #ff0000;
+  color: #aa1c17;
 }
 .nav-secondary .wrap li.menu-item ul {
   display: none;
@@ -6609,21 +6636,16 @@ Site Navigation
 }
 /* Footer Navigation
 --------------------------------------------- */
-.nav-footer {
-  padding: 0.5rem 0;
-  color: #ffffff;
-  font-size: 1rem;
-}
 .nav-footer li.menu-item {
   width: auto;
   position: relative;
 }
 .nav-footer li.menu-item > a {
   padding: 0 1rem;
-  color: #ffffff;
+  color: #c2c2c2;
 }
 .nav-footer li.menu-item > a:hover {
-  color: #c2c2c2;
+  color: #ffffff;
 }
 .nav-footer li.menu-item ul {
   display: none;
@@ -6706,9 +6728,6 @@ Content Area
 --------------------------------------------- */
 article.entry {
   border-radius: 3px;
-  margin-bottom: 40px;
-  margin-bottom: 4rem;
-  padding: 0rem 1rem  2rem 1rem;
 }
 .entry-content h3 {
   color: #31b3d5;
@@ -6791,7 +6810,7 @@ article.entry {
   font-size: 2.2rem;
   line-height: 1.625;
   font-weight: 300;
-  color: #9ca728;
+  color: #778e1d;
   line-height: 1.25;
 }
 .entry-header .client-name {
@@ -7000,7 +7019,7 @@ Sidebars
   /*Text Widget with Click */
 }
 .sidebar .widget_text .textwidget .readmore {
-  background-color: rgba(156, 167, 40, 0);
+  background-color: rgba(170, 28, 23, 0);
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -7036,7 +7055,7 @@ Sidebars
   border: 0;
 }
 .sidebar .widget_sp_image .link a i {
-  color: #ff9900;
+  color: #f99b01;
 }
 .sidebar span.fa-stack {
   color: #31b3d5;
@@ -7077,7 +7096,7 @@ Footer Widgets
 .footer-widgets .connected-form textarea {
   color: #ffffff;
   background-color: #f5f5f5;
-  border: 0 solid #f3f6d8;
+  border: 0 solid #e5f1b9;
   padding: 1rem !important;
 }
 .footer-widgets .connected-form ::-webkit-input-placeholder {
@@ -7133,7 +7152,7 @@ Footer Widgets
 }
 .footer-widgets .connected-social .social-media a.fa {
   background: none;
-  border: 1px solid #f3f6d8;
+  border: 1px solid #e5f1b9;
   border-radius: 100%;
   color: #ffffff;
   margin: 10px;
@@ -7146,7 +7165,7 @@ Footer Widgets
   margin-right: 0;
 }
 .footer-widgets .connected-social .social-media a.fa:hover {
-  border-color: #767e1e;
+  border-color: #546414;
   color: #ffffff;
 }
 .footer-widgets .connected-social .social-media a.fa-facebook:hover {
@@ -7208,7 +7227,6 @@ Site Footer
   font-size: 13px;
   font-size: 1.3rem;
   line-height: 1.625;
-  line-height: 2;
   padding: 20px 0;
   padding: 2rem 0;
   text-align: center;
@@ -7329,38 +7347,6 @@ Site Footer
   margin-top: 20px;
   position: relative;
   text-align: center;
-}
-.section-meet-our-whiskeys {
-  padding: 100px 0px 230px 0px;
-  background-image: url(../img/extremely-small-batch-whiskey.jpg);
-  background-size: cover;
-  height: auto;
-  background-position: center top;
-}
-/* Titles */
-.section-meet-our-whiskeys .section-title {
-  margin-bottom: 30px;
-}
-.section-meet-our-whiskeys .section-title h3 {
-  font-size: 72px;
-  font-size: 7.2rem;
-  line-height: 65px;
-  line-height: 6.5rem;
-  color: #4f4237;
-  text-align: center;
-  font-family: 'Roboto Slab';
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-}
-/*.section-meet-our-whiskeys .section-title strong{
-  font-size:140px;
-  letter-spacing:-0.02em;
-  font-weight:400;
-  line-height:13rem;
-  }*/
-.section-meet-our-whiskeys .section-body {
-  padding: 40px 0px;
 }
 /*Bourbon Whiskey*/
 .bourbon_whiskey {
@@ -7537,6 +7523,7 @@ Site Footer
 }
 .section-contact-george-remus .section-title {
   text-align: left;
+  margin-bottom: 0;
 }
 .section-contact-george-remus .section-title h3 {
   font-size: 36px;
@@ -7547,17 +7534,19 @@ Site Footer
   text-transform: uppercase;
   padding-bottom: 20px;
 }
-.section-contact-george-remus .section-title,
-.gform_description {
+.section-contact-george-remus .gform_wrapper {
+  margin: 0;
+}
+.section-contact-george-remus .gform_heading {
   font-size: 14px;
   color: #fff;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin-bottom: 30px;
+  line-height: 1;
 }
-.section-contact-george-remus .section-title a,
-.gform_description a {
+.section-contact-george-remus .gform_heading a {
   color: #f99b01;
 }
 .section-contact-george-remus article {

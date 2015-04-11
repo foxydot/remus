@@ -67,6 +67,31 @@ div.gform_wrapper .gform_footer input[type="submit"] {
   font-size: 14px;
   font-size: 1.4rem;
 }
+
+.gform_wrapper{
+  .customheader(1.5);
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  select,
+  textarea {
+  background-color: fade(@white,30%);
+  border: 1px solid fade(@medgrey,20%);
+  color: @white;
+  padding: 16px;
+  padding: 1.6rem;
+  width: 100%;
+}
+}
 /* Jetpack
 --------------------------------------------- */
 

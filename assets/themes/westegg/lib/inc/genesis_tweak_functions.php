@@ -532,7 +532,7 @@ class Description_Walker extends Walker_Nav_Menu
 function msdlab_do_social_footer(){
     global $msd_social;
     global $wp_filter;
-    //ts_var( $wp_filter['msdlab_title_area'] );
+    //ts_var( $wp_filter['genesis_entry_content'] );
     if(has_nav_menu('footer_menu')){$footer_menu .= wp_nav_menu( array( 'theme_location' => 'footer_menu','container_class' => 'menu genesis-nav-menu nav-footer','echo' => FALSE ) );}
     
     if($msd_social){
@@ -693,4 +693,8 @@ if(!function_exists('msdlab_custom_hooks_management')){
 add_action('genesis_after_footer','msdlab_gototop');
 function msdlab_gototop(){
     print '<div class="go-up" style="right: 40px;"><i class="fa fa-chevron-up"></i></div>';
+}
+add_filter('genesis_edit_post_link','msdlab_remove_edit_link');
+function msdlab_remove_edit_link(){
+    return false;
 }

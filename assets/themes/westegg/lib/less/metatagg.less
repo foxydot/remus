@@ -11,7 +11,7 @@
   cursor:pointer;
   text-align:center;
   z-index:9999;
-  background:#861612;
+  background:@dkred;
   -webkit-transition: all 0.2s ease-in;  
   -moz-transition: all 0.2s ease-in;  
   -ms-transition: all 0.2s ease-in;  
@@ -26,36 +26,7 @@
     position: relative;
     text-align: center;
 }
-.section-meet-our-whiskeys{
-  padding:100px 0px 230px 0px;
-  background-image:url(../img/extremely-small-batch-whiskey.jpg);
-  background-size:cover;
-  height:auto;
-  background-position:center top;
-  }
-  /* Titles */
-.section-meet-our-whiskeys .section-title{ margin-bottom:30px;}
-.section-meet-our-whiskeys .section-title h3{
-  font-size:72px;
-  font-size:7.2rem;
-  line-height:65px;
-  line-height:6.5rem;
-  color:#4f4237;
-  text-align:center;
-  font-family:'Roboto Slab';
-  font-weight:400;
-  text-transform:uppercase;
-  letter-spacing:-0.02em;
-  }
-/*.section-meet-our-whiskeys .section-title strong{
-  font-size:140px;
-  letter-spacing:-0.02em;
-  font-weight:400;
-  line-height:13rem;
-  }*/
-.section-meet-our-whiskeys .section-body{
-  padding:40px 0px;
-  }
+
 
 /*Bourbon Whiskey*/
 .bourbon_whiskey{
@@ -231,9 +202,9 @@
   background-size:cover;
   height:auto;
   background-position:center top;
-  }
-.section-contact-george-remus .section-title{ text-align:left;}
-.section-contact-george-remus .section-title h3{
+  .section-title{ text-align:left;
+  margin-bottom: 0;
+    h3{
   font-size:36px;
     color:#fff;
   text-align:left;
@@ -242,21 +213,26 @@
   text-transform:uppercase;
   padding-bottom:20px;
   }
-.section-contact-george-remus .section-title, .gform_description{
+}
+.gform_wrapper{
+  margin: 0;
+}
+.gform_heading{
   font-size:14px;
     color:#fff;
   text-align:left;
   font-family:'Open Sans', sans-serif;
   font-weight:400;
   margin-bottom:30px;
+  line-height: 1;
   a{
   color:#f99b01;
   }}
-.section-contact-george-remus article{
+  article{
   margin-bottom:0px;
   padding-bottom:0px;
   }
-
+}
 
 .footer-menu:after,
 .site-footer:after {
@@ -431,7 +407,7 @@
   font-weight:normal !important;
   }
 .section-values{
-  background:#861612;
+  background:@dkred;
   padding:35px 0px; 
   }
 .section-values h3{
@@ -604,7 +580,7 @@
   }
 .padding-top-35{padding-top:35px}
 .section-volstead-act{
-  background:#861612;
+  background:@dkred;
   padding:40px 0px;
   text-align:center;
   }
