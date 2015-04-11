@@ -5626,7 +5626,7 @@ html {
   /* 10px browser default */
 }
 body {
-  background: #aa1c17;
+  background: #ffffff;
   color: #1a1a1a;
   font-family: "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
@@ -6153,6 +6153,77 @@ section.layerslider_widget {
 /*
 Plugins
 ---------------------------------------------------------------------------------------------------- */
+.social-media {
+  float: right;
+  display: inline-block;
+}
+.social-media a.fa {
+  background: none;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  border: 1px solid #ffffff;
+  margin: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+.social-media a.fa:before {
+  opacity: 1;
+}
+.social-media a.fa.last-child {
+  margin-right: 0;
+}
+.social-media a.fa-facebook:hover {
+  background-color: #345aa1;
+}
+.social-media a.fa-twitter:hover {
+  background-color: #348db9;
+}
+.social-media a.fa-pinterest:hover {
+  background-color: #ec1a22;
+}
+.social-media a.fa-google-plus:hover {
+  background-color: #000000;
+}
+.social-media a.fa-linkedin:hover {
+  background-color: #66b5d3;
+}
+.social-media a.fa-instagram:hover {
+  background-color: #ec1a22;
+}
+.social-media a.fa-tumblr:hover {
+  background-color: #3e5a70;
+}
+.social-media a.fa-reddit:hover {
+  background-color: #ff4400;
+}
+.social-media a.fa-flickr:hover {
+  background-color: #0062dd;
+}
+.social-media a.fa-youtube:hover {
+  background-color: #cc181e;
+}
+.social-media a.fa-vimeo-square:hover {
+  background-color: #232021;
+}
+.social-media a.fa-vine:hover {
+  background-color: #00be8f;
+}
+.social-media a.fa-share-alt:hover {
+  background-color: #00bf00;
+}
+.social-media a.fa-envelope:hover {
+  background-color: #999999;
+}
+.social-media a.fa-rss:hover {
+  background-color: #f37d2a;
+}
 /* Genesis eNews Extended
 --------------------------------------------- */
 .enews-widget {
@@ -7249,74 +7320,6 @@ Site Footer
 }
 .site-footer .social .social-media {
   float: none;
-  display: inline-block;
-}
-.site-footer .social .social-media a.fa {
-  background: none;
-  border-radius: 100%;
-  color: #ffffff;
-  font-size: 1.8rem;
-  line-height: 1.6;
-  border: 1px solid #ffffff;
-  margin: 3px;
-  height: 30px;
-  width: 30px;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  -webkit-border-radius: 7px;
-}
-.site-footer .social .social-media a.fa:before {
-  opacity: 1;
-}
-.site-footer .social .social-media a.fa.last-child {
-  margin-right: 0;
-}
-.site-footer .social .social-media a.fa-facebook:hover {
-  background-color: #345aa1;
-}
-.site-footer .social .social-media a.fa-twitter:hover {
-  background-color: #348db9;
-}
-.site-footer .social .social-media a.fa-pinterest:hover {
-  background-color: #ec1a22;
-}
-.site-footer .social .social-media a.fa-google-plus:hover {
-  background-color: #000000;
-}
-.site-footer .social .social-media a.fa-linkedin:hover {
-  background-color: #66b5d3;
-}
-.site-footer .social .social-media a.fa-instagram:hover {
-  background-color: #ec1a22;
-}
-.site-footer .social .social-media a.fa-tumblr:hover {
-  background-color: #3e5a70;
-}
-.site-footer .social .social-media a.fa-reddit:hover {
-  background-color: #ff4400;
-}
-.site-footer .social .social-media a.fa-flickr:hover {
-  background-color: #0062dd;
-}
-.site-footer .social .social-media a.fa-youtube:hover {
-  background-color: #cc181e;
-}
-.site-footer .social .social-media a.fa-vimeo-square:hover {
-  background-color: #232021;
-}
-.site-footer .social .social-media a.fa-vine:hover {
-  background-color: #00be8f;
-}
-.site-footer .social .social-media a.fa-share-alt:hover {
-  background-color: #00bf00;
-}
-.site-footer .social .social-media a.fa-envelope:hover {
-  background-color: #999999;
-}
-.site-footer .social .social-media a.fa-rss:hover {
-  background-color: #f37d2a;
 }
 /*-----------------Css Added by Metatagg-----------------------------*/
 .go-up {
