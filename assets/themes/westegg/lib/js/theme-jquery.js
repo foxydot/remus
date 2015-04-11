@@ -47,6 +47,7 @@ jQuery(document).ready(function($) {
             $(this).parents('.contentBlock').after($(this).parents('.imgBlock'));
         }
     });
+    $('.page.contact .site-inner').addClass('section-contact-george-remus').wrapInner('<div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 col-xs-offset-0"></div>');
     //oh cufon, why are you so awful?
     Cufon.replace('.franchise-bold', { fontFamily:'Franchise Bold', hover:true });
     Cufon('.recipebtn', {
