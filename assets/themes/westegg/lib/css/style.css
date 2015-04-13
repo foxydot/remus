@@ -7714,7 +7714,8 @@ Site Footer
 .section-handcrafted-recipes .section-title {
   text-align: center;
 }
-.section-handcrafted-recipes .section-title h3 {
+.section-handcrafted-recipes .section-title h3,
+.section-handcrafted-recipes .section-title h3 strong {
   font-size: 72px;
   font-size: 7.2rem;
   line-height: 65px;
@@ -8292,7 +8293,8 @@ Site Footer
     height: auto;
     background-position: center top;
   }
-  .section-handcrafted-recipes .section-title h3 {
+  .section-handcrafted-recipes .section-title h3,
+  .section-handcrafted-recipes .section-title h3 strong {
     font-size: 47px;
     font-size: 4.7rem;
     line-height: 40px;
@@ -8312,7 +8314,8 @@ Site Footer
     padding: 0 8px;
     font-size: 16px;
   }
-  .section-handcrafted-recipes .section-title h3 {
+  .section-handcrafted-recipes .section-title h3,
+  .section-handcrafted-recipes .section-title h3 strong {
     font-size: 47px;
     font-size: 4.7rem;
     line-height: 40px;
@@ -8384,7 +8387,8 @@ Site Footer
     margin: 0 auto;
     width: 80%;
   }
-  .section-handcrafted-recipes .section-title h3 {
+  .section-handcrafted-recipes .section-title h3,
+  .section-handcrafted-recipes .section-title h3 strong {
     font-size: 52px;
     font-size: 5.2rem;
     line-height: 45px;
@@ -8643,7 +8647,8 @@ Site Footer
     margin-top: 0px;
     margin-bottom: 15px;
   }
-  .section-handcrafted-recipes .section-title h3 {
+  .section-handcrafted-recipes .section-title h3,
+  .section-handcrafted-recipes .section-title h3 strong {
     font-size: 40px;
     font-size: 4.0rem;
     line-height: 33px;
@@ -8739,7 +8744,8 @@ Site Footer
   .section-meet-our-whiskeys {
     padding-bottom: 0px;
   }
-  .section-handcrafted-recipes .section-title h3 {
+  .section-handcrafted-recipes .section-title h3,
+  .section-handcrafted-recipes .section-title h3 strong {
     font-size: 37px;
     font-size: 3.7rem;
     line-height: 30px;
