@@ -19,8 +19,9 @@ jQuery(document).ready(function($) {
 			return '<li class="separator">|</li>';
 		}
 	});
-	
-	$('.nav-primary .remus-logo').html('').append($('.site-header .title-area .site-title'));
+	var desktopLogo = $('.site-header .title-area .site-title').clone();
+	$('.site-header .title-area').addClass('mobile-logo').removeClass('title-area');
+	$('.nav-primary .remus-logo').html('').append(desktopLogo);
 	$('.nav-primary li.menu-item.dot a').append('<span class="separator-dot">&nbsp;</span>');
 	
 	$(".go-up").click(function(){
