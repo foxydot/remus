@@ -7331,6 +7331,7 @@ Site Footer
   display: none;
   margin: 0 auto;
   text-align: center;
+  background-color: #000000;
 }
 .mobile-logo h1 {
   display: inline-block;
@@ -7437,7 +7438,7 @@ Site Footer
     display: block;
   }
   .site-header nav {
-    padding-top: 5px;
+    padding-top: 0;
   }
   .nav-primary {
     float: none;
@@ -8045,7 +8046,7 @@ Site Footer
 /*whiskey 95 1*/
 .section-george-remus-small-batch-95-rye-whiskey {
   background: #fff;
-  padding: 80px 0px 0px 0px;
+  padding: 80px 0px 0 0px;
 }
 .section-george-remus-small-batch-95-rye-whiskey .section-title h3 {
   font-size: 48px;
