@@ -7321,6 +7321,258 @@ Site Footer
 .site-footer .social .social-media {
   float: none;
 }
+.nav-primary li.menu-item.remus-logo {
+  border: none;
+}
+.nav-primary li.menu-item.remus-logo .site-title a {
+  border: none;
+}
+.mobile-logo {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.mobile-logo h1 {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.mobile-logo .site-title {
+  top: 0px;
+}
+.separator-dot {
+  display: inline-block;
+  margin-left: 25px;
+  width: 6px;
+  background: url(../img/dot.png) center center no-repeat;
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Enter Your Custom Styles Here */
+  /*Css Added by Metatagg*/
+  .bourbon_whiskey {
+    text-align: center;
+  }
+  .rye_whiskey {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+  /*Css Added by Metatagg*/
+  .section-extremely-small-batch-whiskey .section-title strong {
+    font-size: 100px;
+  }
+  .section-extremely-small-batch-whiskey {
+    padding-bottom: 150px;
+  }
+}
+.page-title-area .section-title a,
+.page-title-area .page-title a,
+.page-title-area .entry-title a,
+.page-title-area .section-title a:visited,
+.page-title-area .page-title a:visited,
+.page-title-area .entry-title a:visited {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.page-title-area .section-title a:hover,
+.page-title-area .page-title a:hover,
+.page-title-area .entry-title a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.footer-widgets .msd-connected .widget-wrap .wrap div.first-child {
+  padding-left: 0;
+}
+.footer-widgets .msd-connected .widget-wrap .wrap div.last-child {
+  padding-right: 0;
+}
+.nav-responsive ul,
+.nav-responsive li,
+.nav-responsive li a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.nav-responsive a#pull,
+.subnav-responsive a#subpull {
+  display: none;
+}
+/* Responsive Design Custom Styles
+------------------------------------------------------------ */
+/* Smaller screens */
+@media only screen and (max-width: 1023px) {
+  /* Enter Your Custom Styles Here */
+  div.wrap {
+    padding: 0 15px;
+  }
+  .header-image .site-header {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header-image .site-header .title-area {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+  .header-image .site-header .title-area .site-title a {
+    width: 100%;
+    margin: 1rem auto;
+    float: none;
+  }
+  .header-image .site-header .nav-primary {
+    margin: 0 auto;
+    float: none;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Enter Your Custom Styles Here */
+  .mobile-only {
+    display: block;
+  }
+  .remus-logo {
+    display: none !important;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .site-header nav {
+    padding-top: 5px;
+  }
+  .nav-primary {
+    float: none;
+    display: block;
+  }
+  .nav-responsive {
+    text-align: left;
+    border-bottom: 1px solid #fff;
+  }
+  .nav-responsive ul {
+    display: none;
+    height: auto;
+  }
+  .nav-responsive a#pull {
+    display: block;
+    width: 100%;
+    text-indent: 20px;
+    background: #000000;
+    min-height: 46px;
+    padding-top: 6px;
+    position: relative;
+  }
+  .nav-responsive a#pull > strong {
+    color: #fff;
+    text-decoration: none;
+    display: none;
+  }
+  .nav-responsive a#pull ul#mobile_menu {
+    margin-top: 0;
+    border-top: 0px solid #c2c2c2;
+    position: relative;
+    top: 40px;
+  }
+  .nav-responsive a#pull ul#mobile_menu li {
+    display: block;
+    list-style: none;
+    padding: 0;
+  }
+  .nav-responsive a#pull ul#mobile_menu li a {
+    background: #141414;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border-bottom: 0px solid #c2c2c2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .nav-responsive a#pull ul#mobile_menu li a .toggle-switch {
+    right: 15px;
+  }
+  .nav-responsive a#pull ul#mobile_menu li a:hover {
+    background: #2c2c2c;
+    color: #ffffff;
+  }
+  .nav-responsive a#pull ul#mobile_menu li .toggle-switch {
+    margin-right: 12px;
+  }
+  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu {
+    margin-top: 0;
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: none;
+  }
+  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li {
+    display: block;
+    list-style: none;
+  }
+  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li a {
+    text-indent: 40px;
+  }
+  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li ul li a {
+    text-indent: 60px;
+  }
+  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li ul li ul li a {
+    text-indent: 80px;
+  }
+  .nav-responsive a#pull ul#mobile_menu li.separator {
+    display: none;
+  }
+  .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
+    background: #2c2c2c;
+    color: #ffffff;
+  }
+  .nav-responsive a#pull:hover {
+    text-decoration: none;
+  }
+  .nav-responsive a#pull:after {
+    content: "\f0c9";
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-weight: 100;
+    text-indent: 0;
+    color: #ffffff;
+    text-align: center;
+    width: 40px !important;
+    height: 40px !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* Enter Your Custom Styles Here */
+  .pre-header .wrap .header-widget-area .widget {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .pre-header .wrap .header-widget-area .widget .button span {
+    display: block;
+  }
+  .pre-header .wrap .header-widget-area .msd-connected {
+    margin-top: -1.5rem;
+  }
+  .tablepress td,
+  .tablepress th {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 319px) {
+  /* Enter Your Custom Styles Here */
+}
 /*-----------------Css Added by Metatagg-----------------------------*/
 .go-up {
   position: fixed;
@@ -7350,6 +7602,31 @@ Site Footer
   margin-top: 20px;
   position: relative;
   text-align: center;
+}
+.section-meet-our-whiskeys {
+  padding: 100px 0px 230px 0px;
+  background-image: url(../img/extremely-small-batch-whiskey.jpg);
+  background-size: cover;
+  height: auto;
+  background-position: center top;
+}
+.section-meet-our-whiskeys .section-title {
+  margin-bottom: 30px;
+}
+.section-meet-our-whiskeys .section-title h3 {
+  font-size: 72px;
+  font-size: 7.2rem;
+  line-height: 65px;
+  line-height: 6.5rem;
+  color: #4f4237;
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.section-meet-our-whiskeys .section-body {
+  padding: 40px 0px;
 }
 /*Bourbon Whiskey*/
 .bourbon_whiskey {
@@ -8476,255 +8753,4 @@ Site Footer
   font-size:50px;
   line-height:5rem;
   }*/
-}
-.nav-primary li.menu-item.remus-logo {
-  border: none;
-}
-.nav-primary li.menu-item.remus-logo .site-title a {
-  border: none;
-}
-.mobile-logo {
-  display: none;
-  margin: 0 auto;
-  text-align: center;
-}
-.mobile-logo h1 {
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-}
-.mobile-logo .site-title {
-  top: 0px;
-}
-.separator-dot {
-  display: inline-block;
-  margin-left: 25px;
-  width: 6px;
-  background: url(../img/dot.png) center center no-repeat;
-}
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  /* Enter Your Custom Styles Here */
-  /*Css Added by Metatagg*/
-  .bourbon_whiskey {
-    text-align: center;
-  }
-  .rye_whiskey {
-    text-align: center !important;
-    margin-top: 50px;
-  }
-  /*Css Added by Metatagg*/
-  .section-extremely-small-batch-whiskey .section-title strong {
-    font-size: 100px;
-  }
-  .section-extremely-small-batch-whiskey {
-    padding-bottom: 150px;
-  }
-}
-.page-title-area .section-title a,
-.page-title-area .page-title a,
-.page-title-area .entry-title a,
-.page-title-area .section-title a:visited,
-.page-title-area .page-title a:visited,
-.page-title-area .entry-title a:visited {
-  color: #ffffff;
-  opacity: 0.5;
-}
-.page-title-area .section-title a:hover,
-.page-title-area .page-title a:hover,
-.page-title-area .entry-title a:hover {
-  text-decoration: none;
-  opacity: 1;
-}
-.footer-widgets .msd-connected .widget-wrap .wrap div.first-child {
-  padding-left: 0;
-}
-.footer-widgets .msd-connected .widget-wrap .wrap div.last-child {
-  padding-right: 0;
-}
-.nav-responsive ul,
-.nav-responsive li,
-.nav-responsive li a {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-.nav-responsive a#pull,
-.subnav-responsive a#subpull {
-  display: none;
-}
-/* Responsive Design Custom Styles
------------------------------------------------------------- */
-/* Smaller screens */
-@media only screen and (max-width: 1023px) {
-  /* Enter Your Custom Styles Here */
-  div.wrap {
-    padding: 0 15px;
-  }
-  .header-image .site-header {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .header-image .site-header .title-area {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-  }
-  .header-image .site-header .title-area .site-title a {
-    width: 100%;
-    margin: 1rem auto;
-    float: none;
-  }
-  .header-image .site-header .nav-primary {
-    margin: 0 auto;
-    float: none;
-  }
-}
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  /* Enter Your Custom Styles Here */
-  .mobile-only {
-    display: block;
-  }
-  .remus-logo {
-    display: none !important;
-  }
-  .mobile-logo {
-    display: block;
-  }
-  .site-header nav {
-    padding-top: 5px;
-  }
-  .nav-primary {
-    float: none;
-    display: block;
-  }
-  .nav-responsive {
-    text-align: left;
-    border-bottom: 1px solid #fff;
-  }
-  .nav-responsive ul {
-    display: none;
-    height: auto;
-  }
-  .nav-responsive a#pull {
-    display: inline-block;
-    width: 100%;
-    text-indent: 20px;
-    background: #000000;
-    min-height: 46px;
-    padding-top: 6px;
-    position: relative;
-  }
-  .nav-responsive a#pull > strong {
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
-    font-size: 1.2rem;
-    display: none;
-  }
-  .nav-responsive a#pull ul#mobile_menu {
-    margin-top: 14px;
-    border-top: 0px solid #c2c2c2;
-  }
-  .nav-responsive a#pull ul#mobile_menu li {
-    display: block;
-    list-style: none;
-    padding: 0;
-  }
-  .nav-responsive a#pull ul#mobile_menu li a {
-    background: #141414;
-    color: #ffffff;
-    display: block;
-    width: 100%;
-    padding: 0.5em;
-    border-bottom: 1px solid #c2c2c2;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .nav-responsive a#pull ul#mobile_menu li a .toggle-switch {
-    right: 15px;
-  }
-  .nav-responsive a#pull ul#mobile_menu li a:hover {
-    background: #2c2c2c;
-    color: #ffffff;
-  }
-  .nav-responsive a#pull ul#mobile_menu li .toggle-switch {
-    margin-right: 12px;
-  }
-  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu {
-    margin-top: 0;
-    display: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    background: none;
-  }
-  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li {
-    display: block;
-    list-style: none;
-  }
-  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li a {
-    text-indent: 40px;
-  }
-  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li ul li a {
-    text-indent: 60px;
-  }
-  .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li ul li ul li a {
-    text-indent: 80px;
-  }
-  .nav-responsive a#pull ul#mobile_menu li.separator {
-    display: none;
-  }
-  .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
-    background: #2c2c2c;
-    color: #ffffff;
-  }
-  .nav-responsive a#pull:hover {
-    text-decoration: none;
-  }
-  .nav-responsive a#pull:after {
-    content: "\f0c9";
-    font-family: 'FontAwesome';
-    font-size: 2.8rem;
-    font-weight: 100;
-    text-indent: 0;
-    color: #ffffff;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    -webkit-border-radius: 4px;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 4px;
-    -moz-background-clip: padding;
-    border-radius: 4px;
-    background-clip: padding-box;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 3px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* Enter Your Custom Styles Here */
-  .pre-header .wrap .header-widget-area .widget {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .pre-header .wrap .header-widget-area .widget .button span {
-    display: block;
-  }
-  .pre-header .wrap .header-widget-area .msd-connected {
-    margin-top: -1.5rem;
-  }
-  .tablepress td,
-  .tablepress th {
-    display: inline-block;
-  }
-}
-@media only screen and (max-width: 319px) {
-  /* Enter Your Custom Styles Here */
 }
