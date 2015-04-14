@@ -7355,7 +7355,6 @@ Site Footer
     text-align: center;
   }
   .rye_whiskey {
-    text-align: center !important;
     margin-top: 50px;
   }
   /*Css Added by Metatagg*/
@@ -8722,7 +8721,7 @@ Site Footer
     font-weight: 400;
   }
   .padding-top-35 {
-    padding-top: 0px;
+    padding-top: 10px;
   }
   .go-up {
     position: fixed;
