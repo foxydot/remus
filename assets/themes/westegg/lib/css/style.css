@@ -7354,9 +7354,6 @@ Site Footer
   .bourbon_whiskey {
     text-align: center;
   }
-  .rye_whiskey {
-    margin-top: 50px;
-  }
   /*Css Added by Metatagg*/
   .section-extremely-small-batch-whiskey .section-title strong {
     font-size: 100px;
@@ -8076,6 +8073,7 @@ Site Footer
   width: 17%;
   padding-right: 10px;
   vertical-align: top;
+  text-align: right;
 }
 .section-george-remus-small-batch-95-rye-whiskey .section-body ul li span {
   display: inline-block;
