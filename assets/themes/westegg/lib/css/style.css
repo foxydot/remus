@@ -6309,6 +6309,25 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 img#wpstats {
   display: none;
 }
+/* Age verify */
+#av-overlay-wrap {
+  background: rgba(26, 26, 26, 0.9);
+}
+#av-overlay-wrap #av-overlay {
+  box-shadow: 0 0 24px 0 #000000;
+  border: 4px solid #aa1c17;
+  text-align: center;
+}
+#av-overlay-wrap #av-overlay form select,
+#av-overlay-wrap #av-overlay form input {
+  width: auto;
+}
+#av-overlay-wrap #av-overlay form input[type="submit"] {
+  color: #aa1c17;
+  border-color: #aa1c17;
+  display: block;
+  margin: 0 auto;
+}
 /*
 Site Header
 ---------------------------------------------------------------------------------------------------- */
